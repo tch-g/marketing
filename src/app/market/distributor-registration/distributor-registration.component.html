@@ -1,0 +1,10 @@
+<p>distributor-registration works!</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="card-value border-bottom">
+        <div class="card-name">Card name</div>
+        <div class="card-input-v">
+            <input type="text" formControlName="name" class="input-st" placeholder="Please add your card type name">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
