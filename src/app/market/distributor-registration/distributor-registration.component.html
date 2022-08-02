@@ -1,10 +1,90 @@
 <p>distributor-registration works!</p>
+
 <form [formGroup]="form" (ngSubmit)="submit()">
-    <div class="card-value border-bottom">
-        <div class="card-name">Card name</div>
-        <div class="card-input-v">
-            <input type="text" formControlName="name" class="input-st" placeholder="Please add your card type name">
+
+    <p>
+        <label for="firstname">First Name </label>
+        <input type="text" id="firstname" name="firstname" formControlName="firstname">
+    </p>
+
+    <p>
+        <label for="lastname">Last Name </label>
+        <input type="text" id="lastname" name="lastname" formControlName="lastname">
+    </p>
+
+
+
+    <p>
+        <label for="dateofbirth">Date of Birth </label>
+        <input type="text" id="dateofbirth" name="email" formControlName="dateofbirth">
+    </p>
+
+
+
+    <p>
+        <label for="gender">Geneder </label>
+        <input type="radio" value="male" id="gender" name="gender" formControlName="gender"> Male
+        <input type="radio" value="female" id="gender" name="gender" formControlName="gender"> Female
+    </p>
+
+
+
+
+
+    <div formGroupName="identity">
+
+        <div class="form-group">
+            <label for="type">type</label>
+            <input type="text" class="form-control" name="type" formControlName="type">
         </div>
+
+
+        <div class="form-group">
+            <label for="seria">seria</label>
+            <input type="text" class="form-control" name="seria" formControlName="seria">
+        </div>
+
+
+        <div class="form-group">
+            <label for="number">number</label>
+            <input type="text" class="form-control" name="number" formControlName="number">
+        </div>
+
+        <div class="form-group">
+            <label for="releasedate">release date</label>
+            <input type="text" class="form-control" name="releasedate" formControlName="releasedate">
+        </div>
+
+        <div class="form-group">
+            <label for="term">term</label>
+            <input type="text" class="form-control" name="term" formControlName="term">
+        </div>
+
+        <div class="form-group">
+            <label for="personalnumber">personal number</label>
+            <input type="text" class="form-control" name="personalnumber" formControlName="personalnumber">
+        </div>
+
+        <div class="form-group">
+            <label for="issuingagency">issuing agency</label>
+            <input type="text" class="form-control" name="issuingagency" formControlName="issuingagency">
+        </div>
+
+
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <p>
+        <label for="contact">contact</label>
+        <input type="text" id="contact" name="contact" formControlName="contact">
+    </p>
+
+    <p>
+        <label for="address">address </label>
+        <input type="text" id="address" name="address" formControlName="address">
+    </p>
+
+    <p>
+        <button type="submit" [disabled]="!form.valid">Submit</button>
+    </p>
+
 </form>
