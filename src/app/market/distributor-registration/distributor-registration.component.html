@@ -84,6 +84,15 @@
     </p>
 
     <p>
+        <label for="recommender">recommender </label>
+        <select id="recommender" name="recommender" formControlName="recommender">
+        <option [ngValue]="c.id" *ngFor="let c of datas">
+          {{c.firstname}}
+        </option>
+      </select>
+    </p>
+
+    <p>
         <button type="submit" [disabled]="!form.valid">Submit</button>
     </p>
 

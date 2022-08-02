@@ -30,6 +30,7 @@ export class DistributorRegistrationComponent implements OnInit {
       }),
       contact: ['', [Validators.required,  Validators.maxLength(100)]],
       address: ['', [Validators.required,  Validators.maxLength(100)]],
+      recommender: [''],
     });
 
     this.getDistributor()

@@ -1,6 +1,81 @@
 {
-    "distributor": [
-
-    ],
-    "product": []
+  "distributor": [
+    {
+      "firstname": "test",
+      "lastname": "lastname",
+      "dateofbirth": "date",
+      "gender": "male",
+      "identity": {
+        "type": "awd",
+        "seria": "2131",
+        "number": "12312",
+        "releasedate": "awd",
+        "term": "w",
+        "personalnumber": "32424",
+        "issuingagency": "efsf"
+      },
+      "contact": "3224+",
+      "address": "21",
+      "recommender": "",
+      "id": 1
+    },
+    {
+      "firstname": "giorgi",
+      "lastname": "wadawd",
+      "dateofbirth": "awd",
+      "gender": "male",
+      "identity": {
+        "type": "awd",
+        "seria": "2112e",
+        "number": "e2awdad2d",
+        "releasedate": "awd2ed",
+        "term": "2ae",
+        "personalnumber": "ad2ed",
+        "issuingagency": "aa2d"
+      },
+      "contact": "a2d",
+      "address": "2ed2a",
+      "recommender": null,
+      "id": 2
+    },
+    {
+      "firstname": "awd",
+      "lastname": "awd",
+      "dateofbirth": "awd",
+      "gender": "male",
+      "identity": {
+        "type": "awd",
+        "seria": "awd",
+        "number": "awd",
+        "releasedate": "s",
+        "term": "feawd",
+        "personalnumber": "awd",
+        "issuingagency": "sf"
+      },
+      "contact": "drg",
+      "address": "drg",
+      "recommender": "",
+      "id": 3
+    },
+    {
+      "firstname": "xdv",
+      "lastname": "xdv",
+      "dateofbirth": "xdv",
+      "gender": "female",
+      "identity": {
+        "type": "xdv",
+        "seria": "xdv",
+        "number": "xdv",
+        "releasedate": "xdv",
+        "term": "xdv",
+        "personalnumber": "xdv",
+        "issuingagency": "xdv"
+      },
+      "contact": "xdv",
+      "address": "xdv",
+      "recommender": "",
+      "id": 4
+    }
+  ],
+  "product": []
 }
