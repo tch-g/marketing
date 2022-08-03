@@ -98,7 +98,7 @@
         <p class="d-flex justify-content-center">
             <label for="recommender" class="m-2">recommender </label>
             <select id="recommender" name="recommender" formControlName="recommender">
-            <option [ngValue]="c.firstname" *ngFor="let c of datas">
+            <option [ngValue]="c.firstname" *ngFor="let c of datas" selected>
               {{c.firstname}}
             </option>
           </select>

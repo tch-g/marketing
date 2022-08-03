@@ -2,3 +2,49 @@
     <button class="btn btn-info m-3" (click)="goToDistributor()">Distributor Registaration</button>
     <button class="btn btn-info m-3" (click)="goToProduct()">Product Registaration</button>
 </div>
+
+<div class="py-5 d-flex justify-content-center">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+        <h1>Distributor Sales</h1>
+
+        <div class="mb-2">
+            <label for="name" class="form-label">First Name</label>
+            <select id="name" class="form-select" formControlName="firstname">
+                <option [ngValue]="c.firstname" *ngFor="let c of datas">
+                    {{c.firstname}}
+                </option>
+            </select>
+        </div>
+        <div class=" mb-2">
+            <label class="form-label">Sale Date</label>
+            <input type="text" class="form-control" formControlName="saledate">
+        </div>
+        <div class=" mb-2">
+            <label for="name" class="form-label">Product Code</label>
+            <select id="name" class="form-select" formControlName="code">
+                <option >id</option>
+            </select>
+
+        </div>
+
+        <div class=" mb-2">
+            <label class="form-label">Sale Product Quantity</label>
+            <input type="text" class="form-control" formControlName="quantity">
+        </div>
+
+        <div class=" mb-2">
+            <label for="name" class="form-label">Unit Price</label>
+            <select id="name" class="form-select" formControlName="price">
+                <option >price</option>
+            </select>
+        </div>
+
+        <div class=" mb-2">
+            <label class="form-label">Total Price</label>
+            <input type="text" class="form-control" formControlName="totalprice">
+        </div>
+
+        <button type="submit" class="w-100 btn btn-lg btn-outline-secondary" [disabled]="!form.valid">Submit</button>
+    </form>
+</div>

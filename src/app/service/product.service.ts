@@ -16,7 +16,7 @@ export class ProductService implements OnInit {
  }
 
  getProduct(): Observable<any> {
-  return this.http.get(`${this._url}/distributor`)
+  return this.http.get(`${this._url}/product`)
 }
 
   ngOnInit(): void {}

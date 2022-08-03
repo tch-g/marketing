@@ -18,7 +18,34 @@
       "address": "21",
       "recommender": "",
       "id": 1
+    },
+    {
+      "firstname": "giorgi",
+      "lastname": "wad",
+      "dateofbirth": "awd",
+      "gender": "male",
+      "identity": {
+        "type": "awd",
+        "seria": "1w12",
+        "number": "2112",
+        "releasedate": "11/11",
+        "term": "wad",
+        "personalnumber": "awd",
+        "issuingagency": "awd"
+      },
+      "contact": "wad",
+      "address": "wad",
+      "recommender": "test",
+      "id": 2
     }
   ],
-  "product": []
+  "product": [
+    {
+      "code": "121244",
+      "productname": "lemon",
+      "price": "12",
+      "id": 1
+    }
+  ],
+  "sales": []
 }
