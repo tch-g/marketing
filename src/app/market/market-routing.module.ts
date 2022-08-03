@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { DistributorRegistrationComponent } from "./distributor-registration/distributor-registration.component";
+import { DistributorSalesComponent } from "./distributor-sales/distributor-sales.component";
+import { ProductRegistrationComponent } from "./product-registration/product-registration.component";
 
 const routes: Routes = [
   {
@@ -10,6 +12,14 @@ const routes: Routes = [
   {
     path: 'distributor-registration',
     component: DistributorRegistrationComponent
+  },
+  {
+    path: 'product-registration',
+    component: ProductRegistrationComponent
+  },
+  {
+    path: 'distributor-sales',
+    component: DistributorSalesComponent
   }
 ];
 

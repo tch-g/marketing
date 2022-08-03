@@ -1,99 +1,112 @@
-<p>distributor-registration works!</p>
+<div class=" d-flex justify-content-center">
+    <button class="btn btn-info m-3" (click)="goToProduct()">Product Registaration</button>
+    <button class="btn btn-info m-3" (click)="goToSales()">Distributor Sales</button>
+</div>
+<div class="m-3 py-5 d-flex justify-content-center">
 
-<form [formGroup]="form" (ngSubmit)="submit()">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <h1 class="d-flex justify-content-center">Distributor Registration</h1>
+        <div class="row">
+            <div class="col">
+                <div class="row m-1">
+                    <label for="firstname" class="m-1">First Name </label>
+                    <input type="text" id="firstname" class="form-control" name="firstname" formControlName="firstname">
+                </div>
+            </div>
+            <div class="col">
+                <div class="row m-1">
+                    <label for="lastname" class="m-1">Last Name </label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" formControlName="lastname">
+                </div>
+            </div>
 
-    <p>
-        <label for="firstname">First Name </label>
-        <input type="text" id="firstname" name="firstname" formControlName="firstname">
-    </p>
+        </div>
 
-    <p>
-        <label for="lastname">Last Name </label>
-        <input type="text" id="lastname" name="lastname" formControlName="lastname">
-    </p>
-
-
-
-    <p>
-        <label for="dateofbirth">Date of Birth </label>
-        <input type="text" id="dateofbirth" name="email" formControlName="dateofbirth">
-    </p>
-
-
-
-    <p>
-        <label for="gender">Geneder </label>
-        <input type="radio" value="male" id="gender" name="gender" formControlName="gender"> Male
-        <input type="radio" value="female" id="gender" name="gender" formControlName="gender"> Female
-    </p>
-
-
-
-
-
-    <div formGroupName="identity">
-
-        <div class="form-group">
-            <label for="type">type</label>
-            <input type="text" class="form-control" name="type" formControlName="type">
+        <div class="col">
+            <div class="row m-1">
+                <label for="dateofbirth" class="m-1">Date of Birth </label>
+                <input type="text" class="form-control" id="dateofbirth" name="email" formControlName="dateofbirth">
+            </div>
         </div>
 
 
-        <div class="form-group">
-            <label for="seria">seria</label>
-            <input type="text" class="form-control" name="seria" formControlName="seria">
+        <div class=" col py-4 d-flex justify-content-center">
+            <label for="gender" class="col-md-1">Geneder </label>
+            <div class="row ">
+                <div class="col m-1">
+                    <input type="radio" class="form-check-input" value="male" id="gender" name="gender" formControlName="gender"> Male
+                    <input type="radio" class="form-check-input" value="female" id="gender" name="gender" formControlName="gender"> Female
+                </div>
+            </div>
         </div>
 
 
-        <div class="form-group">
-            <label for="number">number</label>
-            <input type="text" class="form-control" name="number" formControlName="number">
+        <div formGroupName="identity">
+            <div class="row">
+                <div class="col ">
+                    <div class="row m-1">
+                        <label for="type" class="m-1">type</label>
+                        <input type="text" class="form-control" name="type" formControlName="type">
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="seria" class="m-1">seria</label>
+                    <input type="text" class="form-control" name="seria" formControlName="seria">
+                </div>
+
+                <div class="col">
+                    <label for="number" class="m-1">number</label>
+                    <input type="text" class="form-control" name="number" formControlName="number">
+                </div>
+                <div class="col m-1">
+                    <label for="releasedate" class="m-1">release date</label>
+                    <input type="text" class="form-control" name="releasedate" formControlName="releasedate">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="term" class="m-1">term</label>
+                        <input type="text" class="form-control" name="term" formControlName="term">
+                    </div>
+                </div>
+                <div class="col">
+
+                    <label for="personalnumber" class="m-1">personal number</label>
+                    <input type="text" class="form-control" name="personalnumber" formControlName="personalnumber">
+
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label for="issuingagency" class="m-1">issuing agency</label>
+                        <input type="text" class="form-control" name="issuingagency" formControlName="issuingagency">
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="releasedate">release date</label>
-            <input type="text" class="form-control" name="releasedate" formControlName="releasedate">
+        <div class="row ">
+            <p class="m-2 row">
+                <label for="contact">contact</label>
+                <input type="text" class="form-control" id="contact" name="contact" formControlName="contact">
+            </p>
+
+            <p class="m-2 row ">
+                <label for="address"> address </label>
+                <input type="text" class="form-control" id="address" name="address" formControlName="address">
+            </p>
         </div>
+        <p class="d-flex justify-content-center">
+            <label for="recommender" class="m-2">recommender </label>
+            <select id="recommender" name="recommender" formControlName="recommender">
+            <option [ngValue]="c.firstname" *ngFor="let c of datas">
+              {{c.firstname}}
+            </option>
+          </select>
+        </p>
 
-        <div class="form-group">
-            <label for="term">term</label>
-            <input type="text" class="form-control" name="term" formControlName="term">
-        </div>
+        <p class="d-flex justify-content-center">
+            <button type="submit" class="m-2" [disabled]="!form.valid">Submit</button>
+        </p>
 
-        <div class="form-group">
-            <label for="personalnumber">personal number</label>
-            <input type="text" class="form-control" name="personalnumber" formControlName="personalnumber">
-        </div>
-
-        <div class="form-group">
-            <label for="issuingagency">issuing agency</label>
-            <input type="text" class="form-control" name="issuingagency" formControlName="issuingagency">
-        </div>
-
-
-    </div>
-
-    <p>
-        <label for="contact">contact</label>
-        <input type="text" id="contact" name="contact" formControlName="contact">
-    </p>
-
-    <p>
-        <label for="address">address </label>
-        <input type="text" id="address" name="address" formControlName="address">
-    </p>
-
-    <p>
-        <label for="recommender">recommender </label>
-        <select id="recommender" name="recommender" formControlName="recommender">
-        <option [ngValue]="c.id" *ngFor="let c of datas">
-          {{c.firstname}}
-        </option>
-      </select>
-    </p>
-
-    <p>
-        <button type="submit" [disabled]="!form.valid">Submit</button>
-    </p>
-
-</form>
+    </form>
+</div>
