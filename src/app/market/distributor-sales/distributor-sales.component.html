@@ -23,7 +23,9 @@
         <div class=" mb-2">
             <label for="name" class="form-label">Product Code</label>
             <select id="name" class="form-select" formControlName="code">
-                <option >id</option>
+                <option [ngValue]="c.code" *ngFor="let c of product"> 
+                    {{c.code}}
+                </option>
             </select>
 
         </div>
@@ -36,14 +38,17 @@
         <div class=" mb-2">
             <label for="name" class="form-label">Unit Price</label>
             <select id="name" class="form-select" formControlName="price">
-                <option >price</option>
+                <option [ngValue]="c.price" *ngFor="let c of product">
+                    {{c.price}}
+                </option>
             </select>
         </div>
 
         <div class=" mb-2">
             <label class="form-label">Total Price</label>
-            <input type="text" class="form-control" formControlName="totalprice">
+            <input type="text" class="form-control" formControlName="totalprice" [ngModel]="price * quantity">
         </div>
+
 
         <button type="submit" class="w-100 btn btn-lg btn-outline-secondary" [disabled]="!form.valid">Submit</button>
     </form>

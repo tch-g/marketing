@@ -9,15 +9,15 @@
 
         <div class="form-floating mb-2">
             <input type="text" class="form-control" formControlName="code" id="floatingInput" placeholder="code">
-            <label for="floatingInput">code</label>
+            <label for="floatingInput">Product Code</label>
         </div>
         <div class="form-floating mb-2">
             <input type="text" class="form-control" formControlName="productname" placeholder="productname">
-            <label>product name</label>
+            <label>Product Name</label>
         </div>
         <div class="form-floating mb-2">
             <input type="text" class="form-control" formControlName="price" placeholder="price">
-            <label>price</label>
+            <label>Price</label>
         </div>
 
         <button type="submit" class="w-100 btn btn-lg btn-outline-secondary" [disabled]="!form.valid" [style.background-color]="form.invalid ? 'gray' : 'green'">Submit</button>

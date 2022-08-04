@@ -1,42 +1,61 @@
 {
   "distributor": [
     {
-      "firstname": "test",
-      "lastname": "lastname",
-      "dateofbirth": "date",
+      "firstname": "giorgi",
+      "lastname": "awdawd",
+      "dateofbirth": "12.2212",
       "gender": "male",
       "identity": {
-        "type": "awd",
-        "seria": "2131",
-        "number": "12312",
-        "releasedate": "awd",
-        "term": "w",
-        "personalnumber": "32424",
-        "issuingagency": "efsf"
+        "type": "1213",
+        "seria": "444",
+        "number": "22",
+        "releasedate": "2a",
+        "term": "awd",
+        "personalnumber": "awd",
+        "issuingagency": "awd"
       },
-      "contact": "3224+",
-      "address": "21",
+      "contact": "+345345345",
+      "address": "adaddawd",
       "recommender": "",
       "id": 1
     },
     {
-      "firstname": "giorgi",
+      "firstname": "nika",
       "lastname": "wad",
       "dateofbirth": "awd",
       "gender": "male",
       "identity": {
         "type": "awd",
-        "seria": "1w12",
-        "number": "2112",
-        "releasedate": "11/11",
-        "term": "wad",
+        "seria": "awd",
+        "number": "wad",
+        "releasedate": "awd",
+        "term": "awd",
         "personalnumber": "awd",
+        "issuingagency": "wad"
+      },
+      "contact": "awd",
+      "address": "awd",
+      "recommender": "",
+      "id": 2
+    },
+    {
+      "firstname": "luka",
+      "lastname": "wad",
+      "dateofbirth": "awd",
+      "gender": "male",
+      "identity": {
+        "type": "awd",
+        "seria": "awd",
+        "number": "awd",
+        "releasedate": "awd",
+        "term": "awd",
+        "personalnumber": "wad",
         "issuingagency": "awd"
       },
-      "contact": "wad",
+      "contact": "awd",
       "address": "wad",
-      "recommender": "test",
-      "id": 2
+      "recommender": "giorgi",
+      "id": 3
     }
   ],
   "product": [
@@ -45,7 +64,23 @@
       "productname": "lemon",
       "price": "12",
       "id": 1
+    },
+    {
+      "code": "3333",
+      "productname": "orange",
+      "price": "7.5",
+      "id": 2
     }
   ],
-  "sales": []
+  "sales": [
+    {
+      "firstname": "giorgi",
+      "saledate": "12/12/19",
+      "code": "121244",
+      "quantity": "2",
+      "price": "12",
+      "totalprice": 24,
+      "id": 1
+    }
+  ]
 }
